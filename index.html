@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109844965-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-109844965-1');
+    </script>
+	<title>M@R Battle of the Bands</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	
+
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://use.fontawesome.com/0352acafc4.js"></script>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+	<div id="wrapper">
+
+		<!-- Header -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> 
+                </button>
+                    <!--<a class="navbar-brand link" href="#">Continue to Musicians@Ryerson official >></a>-->
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="faq">FAQ
+                            <span class="caret"></span>
+                            </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#event">About The Event</a></li>
+                                    <li><a href="#aud">Auditioning</a></li>
+                                    <li><a href="#Bc_spons">Becoming a Sponsor</a></li>
+                                    <li><a href="#inform">More Information</a></li>
+                                </ul>
+                        </li>
+                    <li><a href="#sponsors">SPONSOR</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
+                            <span class="caret"></span>
+                            </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" data-toggle="modal" data-target="#myModal">Buy Tickets (Coming Soon!)</a></li>
+                                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSf0htUNCBClfrZGUKBeSj0LyfXQ79nq-XD_ssfrZplxfB0T7g/viewform?usp=sf_link" target="_blank" >Audition</a></li>
+                                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfwAJWLxdcKu2crN3CIYKIbFDmRkwQpif8jYxgqTHjZwRKTOw/viewform?usp=sf_link" target="_blank" >Become a Sponsor</a></li>
+                                </ul>
+                        </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+
+		<header id="header" class="container-fluid alt">
+                    <div class="col-sm-12 text-center" id="home">
+				<!--<img src="images/logo.png">-->
+				<h1>Battle of the Bands</h1>
+                                <div class="date"><h2>March 23rd, 2018</h2></div>
+                    </div>            
+                    
+                    <div class="col-sm-12 Button">  
+                    <div class="col-sm-3"></div>
+                    <div class="col-sm-6 allbuts">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSf0htUNCBClfrZGUKBeSj0LyfXQ79nq-XD_ssfrZplxfB0T7g/viewform?usp=sf_link" class="btn btn-primary btn-default" target="_blank" ><span class="glyphicon glyphicon-user"></span> Audition</a>
+                        <a href="#" class="btn btn-primary btn-default" data-toggle="modal" data-target="#myModal"><span class="fa fa-ticket"></span> Buy Tickets (Coming Soon!)</a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfwAJWLxdcKu2crN3CIYKIbFDmRkwQpif8jYxgqTHjZwRKTOw/viewform?usp=sf_link" class="btn btn-primary btn-default" target="_blank" ><span class="fa fa-handshake-o"></span> Become a Sponsor</a>
+                        
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal" role="dialog">
+                            <div class="modal-dialog">
+    
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">Hang Tight!</h4>
+                                    </div>
+                                    
+                                    <div class="modal-body">
+                                        <p>This will be available soon.</p>
+                                    </div>
+                                    
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3"></div>
+                    </div>
+                    
+                    <div class="timer col-sm-12">
+                        <!--<div class=""></div>-->
+                        <div class="day" id="time1"></div>
+                        <div class="hour" id="time2"></div>
+                        <div class="min" id="time3"></div>
+<!--                        <div class="col-sm-2"></div>-->
+<!--                        <div class="sec" id="time4"></div>-->
+                        <!-- Display the countdown timer in an element -->
+                        <p id="demo">
+                            <script>
+                            // Set the date we're counting down to
+                            var countDownDate = new Date("March 23, 2018 15:37:25").getTime();
+
+                            // Update the count down every 1 second
+                            var x = setInterval(function() {
+
+                            // Get todays date and time
+                            var now = new Date().getTime();
+
+                            // Find the distance between now an the count down date
+                            var distance = countDownDate - now;
+
+                            // Time calculations for days, hours, minutes and seconds
+                            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                            // Display the result in the element with id="demo"
+                            document.getElementById("time1").innerHTML = days + "<br>" + " Days"; 
+                            document.getElementById("time2").innerHTML = hours + "<br>" + " Hrs";
+                            document.getElementById("time3").innerHTML = minutes + "<br>" + " Mins";
+
+                            // If the count down is finished, write some text 
+                            if (distance < 0) 
+                            {
+                            clearInterval(x);
+                            document.getElementById("time1").innerHTML = 0 + "<br>" + " Days"; 
+                            document.getElementById("time2").innerHTML = 0 + "<br>" + " Hrs";
+                            document.getElementById("time3").innerHTML = 0 + "<br>" + " Mins";
+                            }}, 1000);
+                            
+                            </script>
+                    </div>
+                </header>
+
+                <div class="aboutPage col-md-12" id="about">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                        <h1 class="h1"><strong>About Us</strong></h1>
+                        <p> 
+                        We are Musicians@Ryerson, a group of about 50 
+                        Ryerson students, community members, Toronto residents,
+                        and artists representing and planning events for the
+                        local Ryerson-Toronto music community. We host events, 
+                        socials, and initiatives to help create community for 
+                        anyone who likes or plays music (which is basically 
+                        everybody!)
+                        </p>
+                        <p>
+                        Musicians@Ryerson’s 6th Annual Battle of the Bands is 
+                        one of Ryerson’s largest concerts every year. Our event 
+                        aims to help up-an-coming Ryerson and local bands grow 
+                        musically and provides a space for everyone to jam out 
+                        to some great local music!
+                        </p>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+                
+                <div class="faqPage col-md-12" id="faq">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                        <h1 class="h1"><strong>FAQ</strong></h1>
+                        <h3 class="h3" id="event"><strong>About the Event</strong></h3>
+                            <ul class="event" >    
+                                <li><strong>How does this event work?</strong></li>
+                                <li>Six bands are chosen to perform in front of a screaming/dancing crowd and a panel of judges (comprised of industry professionals and community members). The winning band will claim the title and the grand prize</li>
+                                <li><strong>Who can attend this event?</strong></li>
+                                <li>This event is open to everybody (including Ryerson and non-Ryerson students!) Bring your friend, bring your mom, bring your dog, bring your neighbour</li>
+                                <li><strong>Where is this event held?</strong></li>
+                                <li>We are very excited to host our event at the historic former Maple Leaf Gardens (now called the Ryerson Mattamy Athletic Centre). The former Maple Leaf Gardens was home to the Toronto Maple Leafs hockey team and hosted many historical events, such as: Elvis Presley, The Beatles, Muhammad Ali, Mötley Crüe and many more. We are excited to have our bands play in the same spot The Beatles did not so many years ago. Who knows, maybe the next Beatles will emerge from this event!
+                                    <div align="center">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.3330975411236!2d-79.38239508489382!3d43.662041779121004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34b4b5299a89%3A0xf2a9c85b8680bfe9!2sMattamy+Athletic+Centre!5e0!3m2!1sen!2sca!4v1510958197786" width="600" height="450" frameborder="0" style="border:0" allowfullscreen ></iframe>
+                                    </div>
+                                </li>
+                                <li><strong>When is this event?</strong></li>
+                                <li>Friday, March 23rd, 2018</li>
+                                <li><strong>How many people are going to attend this event?</strong></li>
+                                <li>We are predicting about 1000!</li>
+                                <li><strong>Is this event fun?</strong></li>
+                                <li>So fun! Check out what people were saying about last year’s event (disclaimer: this year is going to be better)
+                                    <ul class="links">
+                                        <li><strong><a href="https://theeyeopener.com/2017/03/musiciansryerson-host-yearly-battle-of-the-bands-competition/">The EyeOpener</a></strong></li>   
+                                        <li><strong><a href="http://why.ryerson.ca/three-ways-musiciansryersons-battle-bands-similar-ryerson-university/">WhyRyerson</a></strong></li>
+                                        <li><strong><a href="http://www.blogto.com/events/musiciansryerson-presents-battle-of-the-bands-5/">blogTO</a></strong></li>
+                                    </ul>
+                                </li>
+                                <li><strong>Where can I buy tickets?</strong></li>
+                                <li>Hit that “buy tickets” button above!</li>
+                            </ul>
+                            
+                        <h3 class="h3" id="aud"><strong>Auditioning</strong></h3>
+                                <ul class="audition">
+                                    <li><strong>Who can audition for this event?</strong></li>
+                                    <li>Any band that has at least two members and has at least one Ryerson member. If you are not sure, just apply anyways!</li>
+                                    <li><strong>How do I audition?</strong></li>
+                                    <li>Press that big “Audition” button at the top of this page and follow through to provide us some contact info and your tunes. Make sure to put all of your submission files on a Google Drive and link <a href="mailto:webmaster@example.com" style="color:#f9ebab; text-decoration: underline;">Music@ryerson.ca</a> to it.</li>
+                                    <li><strong>What should I submit for my audition?</strong></li>
+                                    <li>As much as you can to show our Evaluation Team that you are a good fit for this event! At the very least, we need a live recording (can be shot on your phone at a rehearsal), but try to give as much as you can. That can include: as many live recordings as you have, as many recordings as you have, links to social media pages, links to articles written about your band, and so on.</li>
+                                    <li><strong>How will the Evaluation Team evaluate the bands?</strong></li>
+                                    <li>Our Evaluation Team will be considering the following: stage presence, skill level, band chemistry, mastery of instruments, ability to get the crowd going, etc.</li> 
+                                </ul>
+                        <h3 class="h3" id="Bc_spons"><strong>Becoming a Sponsor</strong></h3>
+                            <ul class="sponsor">
+                                <li><strong>How do I become a sponsor?</strong></li>
+                                <li>As a non-profit, our event relies on the sponsorship and donations of community partners. To become a sponsor, hit that “Become a Sponsor” button on the top of this page. We will ask you for some basic contact information and get back to you as soon as possible.</li>
+                            </ul>
+                            
+                        <h3 class="h3" id="inform"><strong>More Information</strong></h3>
+                            <ul class="info">
+                                <li><strong>Where can I get more information?</strong></li>
+                                <li>Email us at Music@ryerson.ca or check out our Facebook page at <a href="https://www.facebook.com/groups/ryemusicians/">facebook.com/RyeMusiciansPage</a>.</li>
+                            </ul>
+                    </div>
+                    <div class="col-md-2"></div>    
+                </div>
+                
+                <div class="sponsorPage col-md-12" id="sponsors">
+                    <div class="col-md-2"></div>
+                    <div class="spns col-md-8">
+                        <h1 class="h1"><strong>Sponsors</strong></h1>
+                        <img src="images/riverfest.png" alt="" class="riverfest"/>
+                        <img src="images/rsu.png" alt="" class="rsu"/>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+                
+                <div class="creditPage col-md-12" id="credits">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                         <h1 class="h1"><strong>Credits</strong></h1>
+                            <h3 class="h3" id="website"><strong>Website Development</strong></h3>    
+                                <ul class="webpeeps">
+                                    <li><strong>Steven Dong</strong>
+                                    <ul class="Steven">
+                                        <li><a href="#">Portfolio</a></li>
+                                        <li><a href="#">Instagram</a></li>
+                                        <li><a href="#">Github</a></li>
+                                    </ul></li>
+                                    <li><strong>Akash Chhabria</strong>
+                                    <ul class="Akash">
+                                        <li><a href="#">Portfolio</a></li>
+                                        <li><a href="#">Instagram</a></li>
+                                        <li><a href="#">Github</a></li>
+                                    </ul></li></ul>
+                            <h3 class="h3" id="website"><strong>Photo Content</strong></h3>  
+                                <ul class="photopeeps">
+                                    <li><strong>Gianfranc Pipitone Photography (Website photo)</strong>
+                                    <ul class="gianfranc">
+                                        <li><a href="https://www.facebook.com/gfp.photo/">Facebook</a></li>
+                                    </ul></li></ul>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+                
+                <div class="contactPage col-md-12" id="contact">
+                    <div class="col-md-2"></div>
+                    <div class="contact col-md-4">
+                        <h3><strong>Contact:</strong></h3>
+                            <p>Email: music@ryerson.ca</p>
+                    </div>
+                    <div class="socialMedia col-md-4">
+                    <h3><strong>Social Media:</strong></h3>
+                            <a href="https://www.facebook.com/groups/ryemusicians/" class="fa fa-facebook-official"></a>
+                            <a href="https://twitter.com/RyeMusicians?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="fa fa-twitter-square"></a>
+                            <a href="https://www.instagram.com/ryemusicians/?hl=en" class="fa fa-instagram"></a>
+                        </div>
+                    <div class="col-md-2"></div>
+                </div>
+                
+                <script>
+                    $(document).ready(function(){
+                    // Add scrollspy to <body>
+                    $('body').scrollspy({target: ".navbar", offset: 50});   
+
+                    // Add smooth scrolling on all links inside the navbar
+                    $("#myNavbar a").on('click', function(event) {
+                    // Make sure this.hash has a value before overriding default behavior
+                    if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                    }, 800, function(){
+   
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                    });
+                    }  // End if
+                    });
+                    });
+                </script>
+                
+        </div>
+</body>
+</html>
